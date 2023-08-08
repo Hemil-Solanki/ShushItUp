@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pages/intro_page.dart';
+import 'pages/menu_page.dart';
 
 void main() {
   runApp(const MyApp ());
@@ -8,13 +9,17 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+    @override
+    Widget build(BuildContext context) {
+    return MaterialApp(
+    debugShowCheckedModeBanner: false,
 
-      // Getting Started Page..
-      home: IntroPage(),
+    // Getting Started Page..
+    home: IntroPage(),
+    routes: {
+    '/intropage':(context) => IntroPage(),
+    '/menupage':(context) => MenuPage(),
+      },
     );
   }
 }
