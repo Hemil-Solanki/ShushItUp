@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shushitup/components/button.dart';
+import 'package:shushitup/themes/colors.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -9,7 +10,7 @@ class IntroPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // Background color of the GettingStartedPage
-      backgroundColor: const Color.fromARGB(255, 138, 60, 55),
+      backgroundColor: primaryColor,
       // backgroundColor: Colors.red[400],
       body: Padding(
         padding: const EdgeInsets.all(25.0),

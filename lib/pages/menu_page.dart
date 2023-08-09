@@ -5,6 +5,7 @@ import 'package:shushitup/themes/colors.dart';
 import 'package:shushitup/models/food.dart';
 
 import '../components/food_tile.dart';
+import 'food_details_page.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -49,6 +50,17 @@ class _MenuPageState extends State<MenuPage> {
     ),
   ];
 
+  // NAVIGATE TO FOOD ITEM DETAIL PAGE
+  void navigateToFoodDetails(int index) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FoodDetailsPage(
+          food: foodMenu[index],
+        ),
+      ),);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,8 +92,10 @@ class _MenuPageState extends State<MenuPage> {
               color: primaryColor,
               borderRadius: BorderRadius.circular(20),
             ),
-            margin: const EdgeInsets.symmetric(horizontal: 25),
-            padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 40,),
+            margin: const EdgeInsets.symmetric(horizontal: 25), // ios
+            // margin: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 40,), // ios
+            // padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 35,),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -116,7 +130,8 @@ class _MenuPageState extends State<MenuPage> {
               ],
             ),
           ),
-          const SizedBox(height: 25,),
+          const SizedBox(height: 25,), //ios
+          // const SizedBox(height: 15,),
 
           // SEARCH BAR
           Padding(
@@ -138,7 +153,8 @@ class _MenuPageState extends State<MenuPage> {
               ),
             ),
           ),
-          const SizedBox(height: 25,),
+          const SizedBox(height: 25,), //--ios
+          // const SizedBox(height: 15,),
 
           // MENU LIST
           Padding(
@@ -153,18 +169,22 @@ class _MenuPageState extends State<MenuPage> {
               ),
             ),
           ),
-          const SizedBox(height: 30,),
+          const SizedBox(height: 30,), //--ios
+          // const SizedBox(height: 10,),
 
+          // SCROLL VIEW MENU - PRESSABLE (ON-TAP)
           Expanded(
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: foodMenu.length,
               itemBuilder: (context, index) => FoodTile(
                 food:  foodMenu[index],
+                onTap: () => navigateToFoodDetails(index),
               ),
             ),
           ),
-          const SizedBox(height: 35,),
+          const SizedBox(height: 35,), //--ios
+          // const SizedBox(height: 10,),
 
           // POPULAR FOOD
           Container(
@@ -172,8 +192,10 @@ class _MenuPageState extends State<MenuPage> {
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(20),
             ),
-            margin: const EdgeInsets.only(left: 25, right: 25, bottom: 35,),
-            padding: const EdgeInsets.all(25),
+            margin: const EdgeInsets.only(left: 25, right: 25, bottom: 35,), //--ios
+            // margin: const EdgeInsets.only(left: 25, right: 25, bottom: 15,),
+            padding: const EdgeInsets.all(25), //--ios
+            // padding: const EdgeInsets.all(10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -212,7 +234,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
 
                 // ICON HEART
-                Icon(
+                const Icon(
                   Icons.favorite_outline,
                   color: Colors.grey,
                   size: 28,
