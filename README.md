@@ -1,4 +1,4 @@
-# SushItUp. [![Twitter Follow](https://img.shields.io/twitter/follow/hemilsolanki.svg?style=social)](https://twitter.com/hemilsolanki)
+# ShushItUp. [![Twitter Follow](https://img.shields.io/twitter/follow/hemilsolanki.svg?style=social)](https://twitter.com/hemilsolanki)
 
 ## 🖨️ Description:
 🍙 Shushitup is the ultimate sushi lover's companion, designed to enhance your sushi experience in every way imaginable. Whether you're a seasoned sushi connoisseur or just beginning to explore the world of sushi, this app is your gateway to a world of flavors, creativity, and cultural richness.
