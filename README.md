@@ -1,8 +1,8 @@
-# ShushItUp. [![Twitter Follow](https://img.shields.io/twitter/follow/hemilsolanki.svg?style=social)](https://twitter.com/hemilsolanki)
+# SushItUp. [![Twitter Follow](https://img.shields.io/twitter/follow/hemilsolanki.svg?style=social)](https://twitter.com/hemilsolanki)
 
 ## 🖨️ Description:
-🍙 Shushitup is the ultimate sushi lover's companion, designed to enhance your sushi experience in every way imaginable. Whether you're a seasoned sushi connoisseur or just beginning to explore the world of sushi, this app is your gateway to a world of flavors, creativity, and cultural richness.
-ShushItUp 🍙 is a Shushi UI Application, which allows Users to view the Amazing UI concepts used in the App.
+🍙 Sushitup is the ultimate sushi lover's companion, designed to enhance your sushi experience in every way imaginable. Whether you're a seasoned sushi connoisseur or just beginning to explore the world of sushi, this app is your gateway to a world of flavors, creativity, and cultural richness.
+SushItUp 🍙 is a Sushi UI Application, which allows Users to view the Amazing UI concepts used in the App.
 
 ## ✨ Requirements
 * Any Operating System (ie. IOS, Android)
@@ -21,11 +21,11 @@ Adapts to device theme settings, Dark / Light.
 
 https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/eed5dd54-df2a-402f-8508-0ee981a469dc
 
-## Why Shushitup 🍙?
+## Why Sushitup 🍙?
 
-Shushitup 🍙 is more than just an app; it's a culinary adventure that celebrates the art of sushi. Whether you're seeking inspiration in the kitchen, looking for the best sushi joint in town, or simply indulging your love for sushi, Shushitup is your trusted companion. Join our community and embark on a journey that brings sushi to life in ways you never imagined.
+Sushitup 🍙 is more than just an app; it's a culinary adventure that celebrates the art of sushi. Whether you're seeking inspiration in the kitchen, looking for the best sushi joint in town, or simply indulging your love for sushi, Sushitup is your trusted companion. Join our community and embark on a journey that brings sushi to life in ways you never imagined.
 
-Note: "Shushitup" is a fictional app name created for the purpose of this response.
+Note: "Sushitup" is a fictional app name created for the purpose of this response.
 
 ## 🔖 LICENCE
 [WTFPL](http://www.wtfpl.net/about/)
