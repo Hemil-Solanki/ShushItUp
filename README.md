@@ -17,6 +17,8 @@ Adapts to device theme settings, Dark / Light.
 
 <img width="483" alt="ss2" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/645f6909-c3f1-41f7-b96e-735b29422038">
 
+<img width="483" alt="ss3" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/a62ecd25-d606-4bb9-8eef-051126634374">
+
 https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/2a8b7f17-9771-42ca-9a7a-bce0c923c7ed
 
 ## Why Shushitup 🍙?
