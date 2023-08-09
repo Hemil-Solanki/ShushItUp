@@ -14,7 +14,7 @@ class MenuPage extends StatefulWidget {
 }
 
 class _MenuPageState extends State<MenuPage> {
-  // FOOD MENU
+  // FOOD MENU LIST
   List foodMenu = [
     // SALMON SUSHI
     Food(
@@ -60,6 +60,8 @@ class _MenuPageState extends State<MenuPage> {
           Icons.menu_rounded,
           color: Colors.grey[900],
         ),
+
+        // TITLE
         title: Text(
           'WHAT\'S ON YOUR MIND?',
           style: TextStyle(
@@ -141,6 +143,7 @@ class _MenuPageState extends State<MenuPage> {
           // MENU LIST
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25,),
+            // MENU TITLE
             child: Text(
               'Food Menu',
               style: TextStyle(
@@ -208,7 +211,7 @@ class _MenuPageState extends State<MenuPage> {
                   ],
                 ),
 
-                // HEART
+                // ICON HEART
                 Icon(
                   Icons.favorite_outline,
                   color: Colors.grey,

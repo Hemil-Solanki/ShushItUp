@@ -17,36 +17,37 @@ class IntroPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
 
-            // Shop name
+            // SHOP NAME
             Text(
               "SHUSHI MAN",
               style: GoogleFonts.dmSerifDisplay(
-                fontSize: 28,
+                fontSize: 30,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 20,),
 
-            // Icon
+            // ICON
             Padding(
               padding: const EdgeInsets.all(50),
-              child: Image.asset('assets/sushi-4.png'),
+              child: Image.asset('assets/g3.gif', width: 500,),
+              // child: Image.asset('assets/sushi-4.png'),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(height: 10,),
 
-            // Title
+            // TITLE
             Text(
               "THE TASTE OF JAPANESE FOOD",
               style: GoogleFonts.dmSerifDisplay(
-                fontSize: 44,
+                fontSize: 45,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 20,),
 
-            // Subtitle
+            // SUBTITLE
             Text(
               "Feel the taste of the most popular Japanese food from anywhere and anytime",
               style: TextStyle(
@@ -56,7 +57,7 @@ class IntroPage extends StatelessWidget {
             ),
             const SizedBox(height: 20,),
 
-            // GetStarted Button
+            // GETSTARTED BUTTON
             MyButton(
                 text: "Get Started",
               onTap: () {

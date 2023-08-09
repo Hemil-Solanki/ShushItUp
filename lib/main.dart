@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
 
-    // Getting Started Page..
+    // GETTING STARTED PAGE..
     home: IntroPage(),
     routes: {
     '/intropage':(context) => IntroPage(),
