@@ -21,18 +21,20 @@ class IntroPage extends StatelessWidget {
             const SizedBox(height: 20),
 
             // SHOP NAME
-            Text(
-              "SHUSHI MAN",
-              style: GoogleFonts.dmSerifDisplay(
-                fontSize: 30,
-                color: Colors.white,
+            Center(
+              child: Text(
+                "SUSHI MAN",
+                style: GoogleFonts.dmSerifDisplay(
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
               ),
             ),
             const SizedBox(height: 20,),
 
             // ICON
             Padding(
-              padding: const EdgeInsets.all(50),
+              padding: const EdgeInsets.all(0),
               child: Image.asset('assets/g3.gif', width: 500,),
               // child: Image.asset('assets/sushi-4.png'),
             ),

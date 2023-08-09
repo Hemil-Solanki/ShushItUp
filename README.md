@@ -13,7 +13,7 @@ ShushItUp 🍙 is a Shushi UI Application, which allows Users to view the Amazin
 ## 🌗 Theme Optmise (Dark / Light)
 Adapts to device theme settings, Dark / Light.
 
-<img width="488" alt="ss2 2" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/debb37bc-1ad4-4eb1-b857-f810761b28dd">
+<img width="483" alt="ss1 1" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/2d0a3313-265c-49e0-bdeb-8ee17003ce95">
 
 <img width="483" alt="ss2" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/645f6909-c3f1-41f7-b96e-735b29422038">
 

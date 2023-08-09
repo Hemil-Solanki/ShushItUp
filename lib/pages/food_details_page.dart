@@ -91,7 +91,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
 
                   // FOOD NAME
                   Text(
-                    "Best in the Town",
+                    "Best in Town",
                     style: GoogleFonts.dmSerifDisplay(
                       fontSize: 24,
                       // fontWeight: FontWeight.bold,
