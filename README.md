@@ -10,7 +10,7 @@ SushItUp 🍙 is a Sushi UI Application, which allows Users to view the Amazing 
 * A little knowledge of Dart and Flutter
 * A brain to think 🤓🤓
 
-## 🌗 Theme Optmise (Dark / Light)
+## 🌗 Theme Optimise (Dark / Light)
 Adapts to device theme settings, Dark / Light.
 
 <img width="483" alt="ss1 1" src="https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/2d0a3313-265c-49e0-bdeb-8ee17003ce95">
