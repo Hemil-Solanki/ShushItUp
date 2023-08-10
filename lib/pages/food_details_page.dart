@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/themes/colors.dart';
-
 import '../models/food.dart';
 
 class FoodDetailsPage extends StatefulWidget {

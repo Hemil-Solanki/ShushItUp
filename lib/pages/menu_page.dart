@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/themes/colors.dart';
 import 'package:shushitup/models/food.dart';
-
 import '../components/food_tile.dart';
 import 'food_details_page.dart';
 

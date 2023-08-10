@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/themes/colors.dart';
+import 'package:vibration/vibration.dart';
 
 class IntroPage extends StatelessWidget {
+  // Function to trigger vibration
+  void _vibrate() {
+    // Vibrate for 100ms
+    Vibration.vibrate(duration: 10);
+  }
+  // const IntroPage({super.key});
   const IntroPage({super.key});
 
   @override
@@ -64,7 +71,9 @@ class IntroPage extends StatelessWidget {
             MyButton(
                 text: "Get Started",
               onTap: () {
-                  // Go to the Menu Page
+                // Call the vibration function
+                _vibrate();
+                // Go to the Menu Page
                 Navigator.pushNamed(context, '/menupage');
               },
             ),
