@@ -44,26 +44,27 @@ class _MenuPageState extends State<MenuPage> {
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        foregroundColor: Colors.grey[900],
         elevation: 0,
-        leading: Icon(
+        leading: const Icon(
           Icons.menu_rounded,
-          color: Colors.grey[900],
         ),
 
         // TITLE
-        title: Text(
+        title: const Text(
           'WHAT\'S ON YOUR MIND?',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.grey[900],
           ),
         ),
 
         actions: [
           // CART BUTTON
           IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.shopping_cart),
+              onPressed: () {
+                Navigator.pushNamed(context, '/cartpage');
+              },
+              icon: const Icon(Icons.shopping_cart, color: Colors.black,),
           ),
         ],
 
