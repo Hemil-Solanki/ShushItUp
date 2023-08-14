@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shushitup/components/button.dart';
 import 'package:shushitup/models/shop.dart';
 import 'package:shushitup/themes/colors.dart';
 
@@ -73,7 +74,10 @@ class CartPage extends StatelessWidget {
             ),
 
             // PAY BUTTON
-
+            MyButton(
+                text: "Pay Now",
+                onTap: () {}
+            ),
           ],
         ),
       ),
