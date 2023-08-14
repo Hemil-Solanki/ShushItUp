@@ -73,6 +73,7 @@ class CartPage extends StatelessWidget {
             ),
 
             // PAY BUTTON
+
           ],
         ),
       ),
