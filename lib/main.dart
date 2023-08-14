@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:shushitup/models/shop.dart';
 import 'pages/intro_page.dart';
 import 'pages/menu_page.dart';
 
 void main() {
-  runApp(const MyApp ());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => Shop(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +22,7 @@ class MyApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
 
     // GETTING STARTED PAGE..
-    home: IntroPage(),
+    home: const IntroPage(),
     routes: {
     '/intropage':(context) => IntroPage(),
     '/menupage':(context) => MenuPage(),

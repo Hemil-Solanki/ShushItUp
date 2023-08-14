@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/themes/colors.dart';
 import 'package:shushitup/models/food.dart';
 import '../components/food_tile.dart';
+import '../models/shop.dart';
 import 'food_details_page.dart';
 
 class MenuPage extends StatefulWidget {
@@ -14,43 +16,14 @@ class MenuPage extends StatefulWidget {
 }
 
 class _MenuPageState extends State<MenuPage> {
-  // FOOD MENU LIST
-  List foodMenu = [
-    // SALMON SUSHI
-    Food(
-      name: "Salmon Sushi",
-      price: "210",
-      imagePath: "assets/sushi-5.png",
-      rating: "4.9",
-    ),
-
-    // CAVIAR
-    Food(
-      name: "Caviar",
-      price: "390",
-      imagePath: "assets/caviar.png",
-      rating: "5.0",
-    ),
-
-    // TUNA
-    Food(
-      name: "Tuna",
-      price: "250",
-      imagePath: "assets/sushi.png",
-      rating: "3.0",
-    ),
-
-    // HERRING
-    Food(
-      name: "Herring",
-      price: "190",
-      imagePath: "assets/herring.png",
-      rating: "4.1",
-    ),
-  ];
 
   // NAVIGATE TO FOOD ITEM DETAIL PAGE
   void navigateToFoodDetails(int index) {
+
+    // GET THE SHOP AND ITS MENU
+    final shop = context.read<Shop>();
+    final foodMenu = shop.foodMenu;
+
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -62,6 +35,11 @@ class _MenuPageState extends State<MenuPage> {
 
   @override
   Widget build(BuildContext context) {
+
+    // GET THE SHOP AND ITS MENU
+    final shop = context.read<Shop>();
+    final foodMenu = shop.foodMenu;
+
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
