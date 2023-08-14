@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/themes/colors.dart';
 import '../models/food.dart';
+import '../models/shop.dart';
 
 class FoodDetailsPage extends StatefulWidget {
   final Food food;
@@ -37,7 +39,39 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
   }
 
   // ADD TO CART
-  void addToCart() {}
+  void addToCart() {
+
+    // ONLY ADD TO CART, IF THERE IS SOMETHING IN THE CART
+    if (quantityCount > 0) {
+      // GET ACCESS TO SHOP
+      final shop = context.read<Shop>();
+
+      // ADD TO CART
+      shop.addToCart(widget.food, quantityCount);
+
+      // LET THE USER KNOW ITS SUCCESSFUL
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          content: const Text("Successfully added to Cart"),
+          actions: [
+
+            //OKAY BUTTON
+            IconButton(
+              onPressed: () {
+                // POP ONCE TO REMOVE DIALOG BOX
+                Navigator.pop(context);
+
+                // POP AGAIN TO GO TO PREVIOUS SCREEN
+                Navigator.pop(context);
+              },
+              icon: const Icon(Icons.done_outline_rounded),
+            ),
+          ],
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
