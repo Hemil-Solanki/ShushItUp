@@ -15,7 +15,6 @@ class MenuPage extends StatefulWidget {
 }
 
 class _MenuPageState extends State<MenuPage> {
-
   // NAVIGATE TO FOOD ITEM DETAIL PAGE
   void navigateToFoodDetails(int index) {
 

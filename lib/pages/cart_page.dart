@@ -10,6 +10,7 @@ class CartPage extends StatelessWidget {
 
   // REMOVE FROM CART
   void removeFromCart(Food food, BuildContext context) {
+
     // GET ACCESS TO SHOP
     final shop = context.read<Shop>();
 
