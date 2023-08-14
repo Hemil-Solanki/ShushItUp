@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shushitup/components/button.dart';
 import 'package:shushitup/models/shop.dart';
 import 'package:shushitup/themes/colors.dart';
-
 import '../models/food.dart';
 
 class CartPage extends StatelessWidget {
@@ -12,7 +11,10 @@ class CartPage extends StatelessWidget {
   // REMOVE FROM CART
   void removeFromCart(Food food, BuildContext context) {
     // GET ACCESS TO SHOP
-    final shop = context.read();
+    final shop = context.read<Shop>();
+
+    // REMOVE FROM CART
+    shop.removeFromCart(food);
   }
 
   @override
