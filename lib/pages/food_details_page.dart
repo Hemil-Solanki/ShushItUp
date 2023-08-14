@@ -52,8 +52,16 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
       // LET THE USER KNOW ITS SUCCESSFUL
       showDialog(
         context: context,
+        barrierDismissible: false,
         builder: (context) => AlertDialog(
-          content: const Text("Successfully added to Cart"),
+          backgroundColor: primaryColor,
+          content: const Text(
+            "Successfully added to Cart",
+            style: TextStyle(
+                color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
+          ),
           actions: [
 
             //OKAY BUTTON
@@ -65,7 +73,10 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                 // POP AGAIN TO GO TO PREVIOUS SCREEN
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.done_outline_rounded),
+              icon: const Icon(
+                Icons.done,
+                color: Colors.white,
+              ),
             ),
           ],
         ),

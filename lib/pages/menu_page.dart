@@ -58,6 +58,15 @@ class _MenuPageState extends State<MenuPage> {
             color: Colors.grey[900],
           ),
         ),
+
+        actions: [
+          // CART BUTTON
+          IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.shopping_cart),
+          ),
+        ],
+
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
