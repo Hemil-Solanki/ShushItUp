@@ -10,7 +10,10 @@ class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
   // REMOVE FROM CART
-  void removeFromCart() {}
+  void removeFromCart(Food food, BuildContext context) {
+    // GET ACCESS TO SHOP
+    final shop = context.read();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,51 +35,56 @@ class CartPage extends StatelessWidget {
         body: Column(
           children: [
             // CUSTOMER CART
-            ListView.builder(
-              itemCount: value.cart.length,
-              itemBuilder: (context, index) {
-                // GET FOOD FROM CART
-                final Food food = value.cart[index];
+            Expanded(
+              child: ListView.builder(
+                itemCount: value.cart.length,
+                itemBuilder: (context, index) {
+                  // GET FOOD FROM CART
+                  final Food food = value.cart[index];
 
-                // GET FOOD NAME
-                final String foodName = food.name;
+                  // GET FOOD NAME
+                  final String foodName = food.name;
 
-                // GET FOOD PRICE
-                final String foodPrice = food.price;
+                  // GET FOOD PRICE
+                  final String foodPrice = food.price;
 
-                // RETURN LIST TILE
-                return Container(
-                  decoration: BoxDecoration(
-                    color: primaryColor,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  margin: const EdgeInsets.only(left: 20, top: 20, right: 20),
-                  child: ListTile(
-                    title: Text(
-                      foodName,
-                      style: const TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
+                  // RETURN LIST TILE
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: primaryColor,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    subtitle: Text(
-                      foodPrice,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                    trailing: IconButton(
-                      icon: const Icon(
-                        Icons.delete,
-                        color: Colors.black45,
+                    margin: const EdgeInsets.only(left: 20, top: 20, right: 20),
+                    child: ListTile(
+                      title: Text(
+                        foodName,
+                        style: const TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                       ),
-                      onPressed: removeFromCart,
+                      subtitle: Text(
+                        foodPrice,
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                      trailing: IconButton(
+                        icon: const Icon(
+                          Icons.delete,
+                          color: Colors.black45,
+                        ),
+                        onPressed: () => removeFromCart(food, context),
+                      ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
 
             // PAY BUTTON
-            MyButton(
-                text: "Pay Now",
-                onTap: () {}
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: MyButton(
+                  text: "Pay Now",
+                  onTap: () {}
+              ),
             ),
           ],
         ),
