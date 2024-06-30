@@ -26,6 +26,3 @@ https://github.com/Hemil-Solanki/ShushItUp/assets/101650059/eed5dd54-df2a-402f-8
 SushItUp 🍙 is more than just an app; it's a culinary adventure that celebrates the art of sushi. Whether you're seeking inspiration in the kitchen, looking for the best sushi joint in town, or simply indulging your love for sushi, Sushitup is your trusted companion. Join our community and embark on a journey that brings sushi to life in ways you never imagined.
 
 Note: "SushItUp" is a fictional app name created for the purpose of this response..
-
-## 🔖 LICENCE
-[WTFPL](http://www.wtfpl.net/about/)
